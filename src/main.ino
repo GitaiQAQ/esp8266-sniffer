@@ -1,5 +1,7 @@
 extern "C" {
   #include <user_interface.h>
+  #include <gpio.h>
+  #include <string.h>
 }
 
 #define DATA_LENGTH           112
@@ -44,6 +46,8 @@ struct SnifferPacket{
     uint16_t len;
 };
 
+static uint32_t chip_id;
+
 static void showMetadata(SnifferPacket *snifferPacket) {
 
   unsigned int frameControl = ((unsigned int)snifferPacket->data[1] << 8) + snifferPacket->data[0];
@@ -55,26 +59,50 @@ static void showMetadata(SnifferPacket *snifferPacket) {
   uint8_t fromDS       = (frameControl & 0b0000001000000000) >> 9;
 
   // Only look for probe request packets
-  if (frameType != TYPE_MANAGEMENT ||
-      frameSubType != SUBTYPE_PROBE_REQUEST)
-        return;
+  //if (frameType != TYPE_MANAGEMENT ||
+  //    frameSubType != SUBTYPE_PROBE_REQUEST)
+  //      return;
 
-  Serial.print("RSSI: ");
+  GPIO_OUTPUT_SET(2, 0);
+  
+  Serial.print(version); // version: 
+
+  Serial.print('|');
+  Serial.print(frameType); // frameType: 
+
+  Serial.print('|');
+  Serial.print(frameSubType); // frameSubType: 
+
+  Serial.print('|');
+  Serial.print(chip_id); // UUID
+
+  Serial.print('|'); // RSSI:
   Serial.print(snifferPacket->rx_ctrl.rssi, DEC);
 
-  Serial.print(" Ch: ");
+  Serial.print('|'); // Channel
   Serial.print(wifi_get_channel());
 
   char addr[] = "00:00:00:00:00:00";
-  getMAC(addr, snifferPacket->data, 10);
-  Serial.print(" Peer MAC: ");
+  getMAC(addr, snifferPacket->data, 4);
+  Serial.print('|'); // Receiver MAC
   Serial.print(addr);
 
-  uint8_t SSID_length = snifferPacket->data[25];
-  Serial.print(" SSID: ");
-  printDataSpan(26, SSID_length, snifferPacket->data);
+  getMAC(addr, snifferPacket->data, 10);
+  Serial.print('|'); // Sender MAC
+  Serial.print(addr);
 
+  if (!strcmp(addr, "00:00:00:00:00:00"))
+    GPIO_OUTPUT_SET(2, 1);
+    return
+
+  Serial.print('|'); // SSID
+  if (frameSubType == SUBTYPE_PROBE_REQUEST){
+      uint8_t SSID_length = snifferPacket->data[25];
+      printDataSpan(26, SSID_length, snifferPacket->data);
+  }
   Serial.println();
+
+  GPIO_OUTPUT_SET(2, 1);
 }
 
 /**
@@ -114,6 +142,9 @@ void channelHop()
 #define ENABLE  1
 
 void setup() {
+  // set chip id as uuid
+  chip_id = system_get_chip_id();
+
   // set the WiFi chip to "promiscuous" mode aka monitor mode
   Serial.begin(115200);
   delay(10);
@@ -122,6 +153,8 @@ void setup() {
   wifi_promiscuous_enable(DISABLE);
   delay(10);
   wifi_set_promiscuous_rx_cb(sniffer_callback);
+
+	PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO2_U, FUNC_GPIO2);
   delay(10);
   wifi_promiscuous_enable(ENABLE);
 
