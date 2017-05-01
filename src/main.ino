@@ -47,6 +47,7 @@ struct SnifferPacket{
 };
 
 static uint32_t chip_id;
+uint32_t sequence = 0;
 
 static void showMetadata(SnifferPacket *snifferPacket) {
 
@@ -64,6 +65,13 @@ static void showMetadata(SnifferPacket *snifferPacket) {
   //      return;
 
   GPIO_OUTPUT_SET(2, 0);
+
+  char addr[] = "00:00:00:00:00:00";
+  getMAC(addr, snifferPacket->data, 10);
+  if (!strcmp(addr, "00:00:00:00:00:00") || !strcmp(addr, "ff:ff:ff:ff:ff:ff")){
+    GPIO_OUTPUT_SET(2, 1);
+    return;
+  }
   
   Serial.print(version); // version: 
 
@@ -76,24 +84,21 @@ static void showMetadata(SnifferPacket *snifferPacket) {
   Serial.print('|');
   Serial.print(chip_id); // UUID
 
+  Serial.print('|');
+  Serial.print(sequence++); // Sequence
+
   Serial.print('|'); // RSSI:
   Serial.print(snifferPacket->rx_ctrl.rssi, DEC);
 
   Serial.print('|'); // Channel
   Serial.print(wifi_get_channel());
 
-  char addr[] = "00:00:00:00:00:00";
-  getMAC(addr, snifferPacket->data, 4);
-  Serial.print('|'); // Receiver MAC
-  Serial.print(addr);
-
-  getMAC(addr, snifferPacket->data, 10);
   Serial.print('|'); // Sender MAC
   Serial.print(addr);
 
-  if (!strcmp(addr, "00:00:00:00:00:00"))
-    GPIO_OUTPUT_SET(2, 1);
-    return
+  getMAC(addr, snifferPacket->data, 4);
+  Serial.print('|'); // Receiver MAC
+  Serial.print(addr);
 
   Serial.print('|'); // SSID
   if (frameSubType == SUBTYPE_PROBE_REQUEST){
