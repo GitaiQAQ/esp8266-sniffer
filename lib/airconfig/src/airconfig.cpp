@@ -56,10 +56,16 @@ void airconfig_stop(int fail){
     Serial.print("HTTPServer START\n");
     httpserver_setup();
     Serial.print("HTTPServer END\n");
+  } else {
+    Serial.print("Sniffer START\n");
+    sniffer_setup();
+    Serial.print("Sniffer END\n");
   }
 }
 
 void airconfig_start(){
   pinMode(led, OUTPUT);
 	smartconfig_start(smartconfig_done);
+  delay(60*1000);
+  if (wifi_station_get_connect_status()!=STATION_GOT_IP) airconfig_stop(1);
 }

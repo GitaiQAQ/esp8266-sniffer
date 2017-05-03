@@ -9,6 +9,7 @@ extern "C" {
 
 #include "ArduinoOTA.h"
 #include <httpserver.h>
+#include <sniffer.h>
 
 void  ICACHE_FLASH_ATTR airconfig_done(sc_status , void  *);
 void airconfig_start();
