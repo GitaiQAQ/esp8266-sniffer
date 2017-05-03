@@ -52,6 +52,11 @@ smartconfig_done(sc_status  status, void  *pdata) {
 
 void airconfig_stop(int fail){
   smartconfig_stop();
+  if (!fail) {
+    Serial.print("HTTPServer START\n");
+    httpserver_setup();
+    Serial.print("HTTPServer END\n");
+  }
 }
 
 void airconfig_start(){
