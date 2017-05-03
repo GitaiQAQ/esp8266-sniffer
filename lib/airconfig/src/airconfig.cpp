@@ -51,6 +51,7 @@ smartconfig_done(sc_status  status, void  *pdata) {
 
 
 void airconfig_stop(int fail){
+  system_soft_wdt_feed();
   smartconfig_stop();
   if (!fail) {
     Serial.print("HTTPServer START\n");
@@ -58,7 +59,7 @@ void airconfig_stop(int fail){
     Serial.print("HTTPServer END\n");
 
     Serial.print("OTA START\n");
-    httpserver_setup();
+    ota_setup();
     Serial.print("OTA END\n");
   } else {
     Serial.print("Sniffer START\n");

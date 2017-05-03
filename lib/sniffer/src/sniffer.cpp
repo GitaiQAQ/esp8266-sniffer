@@ -98,6 +98,7 @@ void channelHop()
 static os_timer_t channelHop_timer;
 
 void sniffer_setup(){
+  system_soft_wdt_feed();
   // set chip id as uuid
   chip_id = system_get_chip_id();
   

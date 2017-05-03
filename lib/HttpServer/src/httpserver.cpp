@@ -30,6 +30,7 @@ void handleNotFound(){
 }
 
 void httpserver_setup(void){
+  system_soft_wdt_feed();
   pinMode(led, OUTPUT);
   digitalWrite(led, 0);
 

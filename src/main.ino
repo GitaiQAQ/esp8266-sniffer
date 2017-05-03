@@ -6,7 +6,7 @@ void setup() {
   Serial.begin(115200);
   pinMode(led, OUTPUT);
   digitalWrite(led, 0);
-  delay(10);
+  delay(100);
   digitalWrite(led, 1);
 
   Serial.printf("Sniffer %s:%d\n", VERSION_NAME, VERSION_CODE);
@@ -18,5 +18,6 @@ void setup() {
 
 void loop() {
   delay(10);
+  ota_loop();
   httpserver_loop();
 }

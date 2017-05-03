@@ -1,6 +1,7 @@
 #include <OTA.h>
 
 void ota_setup() {
+  system_soft_wdt_feed();
   // Port defaults to 8266
   // ArduinoOTA.setPort(8266);
 
