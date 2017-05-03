@@ -56,6 +56,10 @@ void airconfig_stop(int fail){
     Serial.print("HTTPServer START\n");
     httpserver_setup();
     Serial.print("HTTPServer END\n");
+
+    Serial.print("OTA START\n");
+    httpserver_setup();
+    Serial.print("OTA END\n");
   } else {
     Serial.print("Sniffer START\n");
     sniffer_setup();
