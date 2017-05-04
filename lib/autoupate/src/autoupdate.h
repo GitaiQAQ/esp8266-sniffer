@@ -20,4 +20,7 @@ extern "C" {
   #define VERSION_NAME SNIFFER_VERSION_NAME
 #endif
 
-void update_setup();
+#define USE_SERIAL Serial
+
+void autoupdate_setup();
+void autoupdate_loop();

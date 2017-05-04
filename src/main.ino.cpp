@@ -1,7 +1,12 @@
+# 1 "/tmp/tmpxLv31R"
+#include <Arduino.h>
+# 1 "/home/gitai/nodemcu/esp8266-sniffer/src/main.ino"
 #include <main.h>
 
 const int led = 16;
-
+void setup();
+void loop();
+#line 5 "/home/gitai/nodemcu/esp8266-sniffer/src/main.ino"
 void setup() {
   USE_SERIAL.begin(115200);
   pinMode(led, OUTPUT);

@@ -9,6 +9,7 @@ extern "C" {
 
 #include <Arduino.h>
 #include <httpserver.h>
+#include <autoupdate.h>
 #include <sniffer.h>
 #include <OTA.h>
 

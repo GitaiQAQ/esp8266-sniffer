@@ -1,9 +1,9 @@
 #include <airconfig.h>
 
 const int led = 16;
+bool airconfig_run = false;
 
-void  ICACHE_FLASH_ATTR
-smartconfig_done(sc_status  status, void  *pdata) {
+void smartconfig_done(sc_status  status, void  *pdata) {
   digitalWrite(led, 0);
   switch(status)  {
     case SC_STATUS_WAIT:{
@@ -52,6 +52,7 @@ smartconfig_done(sc_status  status, void  *pdata) {
 
 void airconfig_stop(int fail){
   system_soft_wdt_feed();
+  airconfig_run = true;
   smartconfig_stop();
   if (!fail) {
     Serial.print("HTTPServer START\n");
@@ -61,6 +62,10 @@ void airconfig_stop(int fail){
     Serial.print("OTA START\n");
     ota_setup();
     Serial.print("OTA END\n");
+
+    Serial.print("AutoUpdate START\n");
+    autoupdate_setup();
+    Serial.print("AutoUpdate END\n");
   } else {
     Serial.print("Sniffer START\n");
     sniffer_setup();
@@ -71,6 +76,10 @@ void airconfig_stop(int fail){
 void airconfig_start(){
   pinMode(led, OUTPUT);
 	smartconfig_start(smartconfig_done);
-  delay(60*1000);
+  for(uint8_t t = 45; !airconfig_run && t > 0; t--) {
+      Serial.printf("[SETUP] WAIT %d...\n", t);
+      Serial.flush();
+      delay(1000);
+  }
   if (wifi_station_get_connect_status()!=STATION_GOT_IP) airconfig_stop(1);
 }
