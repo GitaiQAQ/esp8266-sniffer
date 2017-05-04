@@ -3,6 +3,7 @@
 MDNSResponder mdns;
 
 ESP8266WebServer server(80);
+WebUpdate httpUpdater;
 
 const int led = 2;
 
@@ -49,6 +50,8 @@ void httpserver_setup(void){
   });
 
   server.onNotFound(handleNotFound);
+
+  httpUpdater.setup(&server);
 
   server.begin();
   Serial.println("HTTP server started");

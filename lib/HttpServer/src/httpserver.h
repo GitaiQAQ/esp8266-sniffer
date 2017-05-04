@@ -5,6 +5,7 @@ extern "C" {
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
+#include <webupdate.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 

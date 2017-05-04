@@ -1,10 +1,10 @@
-#include "ArduinoOTA.h"
-
 extern "C" {
   #include <user_interface.h>
   #include <gpio.h>
   #include <string.h>
 }
+
+#include <Arduino.h>
 
 #define DATA_LENGTH           		112
 

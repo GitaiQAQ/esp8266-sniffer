@@ -7,7 +7,7 @@ extern "C" {
   #include <airkiss.h>
 }
 
-#include "ArduinoOTA.h"
+#include <Arduino.h>
 #include <httpserver.h>
 #include <sniffer.h>
 #include <OTA.h>
