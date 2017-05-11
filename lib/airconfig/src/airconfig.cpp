@@ -78,7 +78,6 @@ void airconfig_start(){
 	smartconfig_start(smartconfig_done);
   for(uint8_t t = 45; !airconfig_run && t > 0; t--) {
       Serial.printf("[SETUP] WAIT %d...\n", t);
-      Serial.flush();
       delay(1000);
   }
   if (wifi_station_get_connect_status()!=STATION_GOT_IP) airconfig_stop(1);

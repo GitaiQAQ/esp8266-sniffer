@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2017-04-26T20:02:10</date>
-  <millis>1493208130782</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282725</millis>
   <sequence>4</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Load saved settings: Firmware:NodeMCU</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:10</date>
-  <millis>1493208130961</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282899</millis>
   <sequence>5</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>Snippets: loading...</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:10</date>
-  <millis>1493208130969</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282904</millis>
   <sequence>6</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Snippets load: Success.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131062</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282971</millis>
   <sequence>7</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -46,8 +46,8 @@
   <message>Set new color theme: Success.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131069</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282976</millis>
   <sequence>8</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -57,8 +57,8 @@
   <message>Load saved settings: DONE.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131072</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282978</millis>
   <sequence>9</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -68,8 +68,8 @@
   <message>Snippets: loading...</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131076</millis>
+  <date>2017-05-11T10:04:42</date>
+  <millis>1494468282980</millis>
   <sequence>10</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -79,8 +79,8 @@
   <message>Snippets load: Success.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131497</millis>
+  <date>2017-05-11T10:04:43</date>
+  <millis>1494468283460</millis>
   <sequence>11</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -90,19 +90,19 @@
   <message>Scan system...</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131513</millis>
+  <date>2017-05-11T10:04:43</date>
+  <millis>1494468283472</millis>
   <sequence>12</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
   <method>log</method>
   <thread>14</thread>
-  <message>found /dev/ttyUSB0</message>
+  <message>found last saved serial port /dev/ttyUSB0</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:11</date>
-  <millis>1493208131516</millis>
+  <date>2017-05-11T10:04:43</date>
+  <millis>1494468283477</millis>
   <sequence>13</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -112,8 +112,8 @@
   <message>Scan done.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:36</date>
-  <millis>1493208156007</millis>
+  <date>2017-05-11T10:04:46</date>
+  <millis>1494468286130</millis>
   <sequence>14</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -123,8 +123,8 @@
   <message>java.lang.NullPointerException</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:36</date>
-  <millis>1493208156010</millis>
+  <date>2017-05-11T10:04:46</date>
+  <millis>1494468286132</millis>
   <sequence>15</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
@@ -134,9 +134,53 @@
   <message>Can't change DTR state</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:36</date>
-  <millis>1493208156756</millis>
+  <date>2017-05-11T10:04:47</date>
+  <millis>1494468287737</millis>
   <sequence>16</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>java.lang.NullPointerException</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:47</date>
+  <millis>1494468287740</millis>
+  <sequence>17</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Can't change DTR state</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:48</date>
+  <millis>1494468288849</millis>
+  <sequence>18</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>java.lang.NullPointerException</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:48</date>
+  <millis>1494468288853</millis>
+  <sequence>19</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Can't change DTR state</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:50</date>
+  <millis>1494468290777</millis>
+  <sequence>20</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -145,9 +189,9 @@
   <message>Serial port /dev/ttyUSB0 save as default.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:36</date>
-  <millis>1493208156759</millis>
-  <sequence>17</sequence>
+  <date>2017-05-11T10:04:50</date>
+  <millis>1494468290779</millis>
+  <sequence>21</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -156,9 +200,9 @@
   <message>Baud rate 9600 save as default.</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:36</date>
-  <millis>1493208156762</millis>
-  <sequence>18</sequence>
+  <date>2017-05-11T10:04:50</date>
+  <millis>1494468290780</millis>
+  <sequence>22</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -167,9 +211,9 @@
   <message>Try to open port /dev/ttyUSB0, baud 9600, 8N1</message>
 </record>
 <record>
-  <date>2017-04-26T20:02:36</date>
-  <millis>1493208156772</millis>
-  <sequence>19</sequence>
+  <date>2017-05-11T10:04:50</date>
+  <millis>1494468290788</millis>
+  <sequence>23</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -178,9 +222,42 @@
   <message>Open port /dev/ttyUSB0 - Success.</message>
 </record>
 <record>
-  <date>2017-04-26T20:04:20</date>
-  <millis>1493208260779</millis>
-  <sequence>20</sequence>
+  <date>2017-05-11T10:04:51</date>
+  <millis>1494468291618</millis>
+  <sequence>24</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>DTR set to ON</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:54</date>
+  <millis>1494468294177</millis>
+  <sequence>25</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.chipid()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:55</date>
+  <millis>1494468295033</millis>
+  <sequence>26</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.info()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:55</date>
+  <millis>1494468295553</millis>
+  <sequence>27</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -189,9 +266,152 @@
   <message>sending:=node.heap()&lt;CR&gt;&lt;LF&gt;</message>
 </record>
 <record>
-  <date>2017-04-26T20:07:13</date>
-  <millis>1493208433777</millis>
-  <sequence>21</sequence>
+  <date>2017-05-11T10:04:55</date>
+  <millis>1494468295929</millis>
+  <sequence>28</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.heap()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:56</date>
+  <millis>1494468296114</millis>
+  <sequence>29</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.heap()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:56</date>
+  <millis>1494468296465</millis>
+  <sequence>30</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.info()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:56</date>
+  <millis>1494468296665</millis>
+  <sequence>31</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.info()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:57</date>
+  <millis>1494468297081</millis>
+  <sequence>32</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.chipid()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:57</date>
+  <millis>1494468297289</millis>
+  <sequence>33</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.chipid()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:57</date>
+  <millis>1494468297633</millis>
+  <sequence>34</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.flashid()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:57</date>
+  <millis>1494468297841</millis>
+  <sequence>35</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.flashid()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:58</date>
+  <millis>1494468298025</millis>
+  <sequence>36</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>sending:=node.flashid()&lt;CR&gt;&lt;LF&gt;</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:59</date>
+  <millis>1494468299818</millis>
+  <sequence>37</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Scan system...</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:59</date>
+  <millis>1494468299826</millis>
+  <sequence>38</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>found last saved serial port /dev/ttyUSB0</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:59</date>
+  <millis>1494468299828</millis>
+  <sequence>39</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>ERROR: Communication with MCU not established.</message>
+</record>
+<record>
+  <date>2017-05-11T10:04:59</date>
+  <millis>1494468299830</millis>
+  <sequence>40</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Scan done.</message>
+</record>
+<record>
+  <date>2017-05-11T10:05:00</date>
+  <millis>1494468300596</millis>
+  <sequence>41</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -200,9 +420,64 @@
   <message>Close port /dev/ttyUSB0 - Success.</message>
 </record>
 <record>
-  <date>2017-04-26T20:07:17</date>
-  <millis>1493208437976</millis>
-  <sequence>22</sequence>
+  <date>2017-05-11T10:05:08</date>
+  <millis>1494468308841</millis>
+  <sequence>42</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Serial port /dev/ttyUSB0 save as default.</message>
+</record>
+<record>
+  <date>2017-05-11T10:05:08</date>
+  <millis>1494468308844</millis>
+  <sequence>43</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Baud rate 9600 save as default.</message>
+</record>
+<record>
+  <date>2017-05-11T10:05:08</date>
+  <millis>1494468308847</millis>
+  <sequence>44</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Try to open port /dev/ttyUSB0, baud 9600, 8N1</message>
+</record>
+<record>
+  <date>2017-05-11T10:05:08</date>
+  <millis>1494468308851</millis>
+  <sequence>45</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Open port /dev/ttyUSB0 - Success.</message>
+</record>
+<record>
+  <date>2017-05-11T10:05:30</date>
+  <millis>1494468330747</millis>
+  <sequence>46</sequence>
+  <logger>ESPlorer.ESPlorer</logger>
+  <level>INFO</level>
+  <class>ESPlorer.ESPlorer</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Close port /dev/ttyUSB0 - Success.</message>
+</record>
+<record>
+  <date>2017-05-11T10:06:38</date>
+  <millis>1494468398598</millis>
+  <sequence>47</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
@@ -211,9 +486,9 @@
   <message>FileTab cleared: Success.</message>
 </record>
 <record>
-  <date>2017-04-26T20:07:17</date>
-  <millis>1493208437978</millis>
-  <sequence>23</sequence>
+  <date>2017-05-11T10:06:38</date>
+  <millis>1494468398599</millis>
+  <sequence>48</sequence>
   <logger>ESPlorer.ESPlorer</logger>
   <level>INFO</level>
   <class>ESPlorer.ESPlorer</class>
